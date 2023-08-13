@@ -15,3 +15,12 @@ assets/scss
 
 # Ignora archivos de configuración SASS
 .sass-cache
+
+
+firebase.json
+
+.firebase
+
+.firebaserc
+
+package-lock
