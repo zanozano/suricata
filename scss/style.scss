@@ -1,0 +1,84 @@
+//! This file is using BEM as a methodology to create hierarchy and organization of the styles
+@use "reset";
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.bg-pink {
+    background-color: #e83e8c;
+}
+
+.navbar-brand img {
+    height: 53px;
+    width: 132px;
+}
+
+.navbar {
+    padding: 0 10%;
+}
+
+main h1 {
+    color: #707070;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 60px 0;
+}
+
+main h5 {
+    color: #373a3c;
+    font-weight: 700;
+}
+
+main p {
+    font-weight: 400;
+}
+
+footer h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+footer div:first-child {
+    background-color: #17a2b8;
+    color: #ffffff;
+    height: 170px;
+}
+
+footer figure {
+    margin-bottom: 0;
+}
+
+footer div:last-child {
+    background-color: #e83e8c;
+    height: 184px;
+    /* FLEBOX */
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer div img {
+    height: 100px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+    footer div:first-child {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    main h1 {
+        color: #707070;
+        font-size: 35px;
+        font-weight: 700;
+        margin: 60px 0;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+}

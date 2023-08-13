@@ -1,0 +1,18 @@
+{
+  "name": "suricata-landing-page",
+  "version": "2.0.0",
+  "description": "Basic project about selling food products. This project is using Bootstrap as a Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss/style.scss:css/style.css"
+  },
+  "keywords": [
+    "landingpage"
+  ],
+  "author": "Cristobal Manzano",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
