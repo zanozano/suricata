@@ -5,7 +5,7 @@
 node_modules
 
 # Ignora la carpeta scss
-assests/scss
+assets/scss
 
 # Ignora todos los archivos de texto
 *.txt
