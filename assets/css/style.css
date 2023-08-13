@@ -190,7 +190,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 .navbar img {
   height: 53px;
@@ -206,19 +206,15 @@ body {
   font-weight: 700;
 }
 
-.container {
-  margin-top: 10rem;
-  margin-bottom: 4rem;
+.main-container {
+  margin: 10rem auto 4rem auto;
 }
-.container__h1 {
+.main-container__h1 {
   color: #707070;
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: center;
-}
-.container .card-deck {
-  margin-bottom: 2rem;
 }
 
 .card {
@@ -226,16 +222,27 @@ body {
   border-radius: 0.6rem;
   border: none;
   color: #707070;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
   overflow: hidden;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
-.card .card-body {
-  height: 100%;
+.card:hover {
+  opacity: 1;
+  transform: scale(1.025);
+  z-index: 1;
+}
+.card:not(:hover) {
+  opacity: 0.9;
 }
 .card .card-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+}
+.card .card-body {
+  height: 100%;
 }
 .card__footer {
   display: flex;

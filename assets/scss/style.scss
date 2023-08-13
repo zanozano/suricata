@@ -16,7 +16,7 @@ $font-secondary: #bf1563;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     & img {
         height: 53px;
         width: 132px;
@@ -32,19 +32,14 @@ $font-secondary: #bf1563;
     }
 }
 
-.container {
-    margin-top: 10rem;
-    margin-bottom: 4rem;
-
+.main-container {
+    margin: 10rem auto 4rem auto;
     &__h1 {
         color: $font-primary;
         font-size: 4rem;
         font-weight: 700;
         margin-bottom: 2rem;
         text-align: center;
-    }
-    & .card-deck {
-        margin-bottom: 2rem;
     }
 }
 
@@ -53,17 +48,30 @@ $font-secondary: #bf1563;
     border-radius: 0.6rem;
     border: none;
     color: $font-primary;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
     overflow: hidden;
+    transition:
+        opacity 0.5s ease-in-out,
+        transform 0.5s ease-in-out;
     box-shadow:
         20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
-    & .card-body {
-        height: 100%;
+    &:hover {
+        opacity: 1;
+        transform: scale(1.025);
+        z-index: 1;
+    }
+    &:not(:hover) {
+        opacity: 0.9;
     }
     & .card-title {
         font-size: 1.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
+    }
+    & .card-body {
+        height: 100%;
     }
     &__footer {
         display: flex;
