@@ -11,8 +11,6 @@
 
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-	<!--FONT-->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 	<!--BOOTSTRAP-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
@@ -24,7 +22,7 @@
 
 <body>
 	<!--NAV-->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-pink">
+	<nav class="navbar navbar-expand-lg navbar-dark">
 		<a class="navbar-brand" href="https://www.linkedin.com/in/zanozano/">
 			<img src="./assets/img/logo.png" alt="logo" />
 		</a>
@@ -32,160 +30,152 @@
 			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+		<!--  -->
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav ml-auto">
+			<ul class="navbar-nav navbar__ul ">
 				<a class="nav-link" href="#">Inicio</a>
 				<a class="nav-link" href="#">Productos</a>
 				<a class="nav-link" href="#">Contacto</a>
-			</div>
+			</ul>
 		</div>
 	</nav>
-	<!--NAV-->
+
 	<main class="container">
-		<h1 class="text-center">Nuestros Productos</h1>
-		<!--CARD-DECK-->
+		<h1 class="container__h1">Nuestros Productos</h1>
+
 		<div class="card-deck">
-			<!--CARD-->
-			<div class="card my-5">
+			<div class="card">
 				<img src="./assets/img/colaciones.jpg" class="card-img-top" alt="..." />
 				<div class="card-body">
 					<h5 class="card-title">Colaciones</h5>
+					<hr>
 					<p class="card-text">
-						Some quick example text to build on the card title and make up the bulk
-						of the card's content.
+						Delight in a hearty breakfast spread: Fluffy pancakes, crispy bacon, scrambled eggs, and a
+						medley of fresh fruits. Rise
+						and shine.
 					</p>
 				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">An item</li>
-					<li class="list-group-item">A second item</li>
-				</ul>
-				<div class="card-body">
-					<a href="#" class="card-link">Ver más</a>
-					<a href="#" class="card-link">Comprar</a>
+				<div class="card__footer">
+					<a href="#" class="card__link">Ver más</a>
+					<a href="#" class="card__link">Comprar</a>
 				</div>
 			</div>
-			<!--CARD-->
-			<div class="card my-5">
-				<img src="./assets/img/desayunos.jpg" class="card-img-top" alt="..." />
-				<div class="card-body">
-					<h5 class="card-title">Desayunos</h5>
-					<p class="card-text">
-						Some quick example text to build on the card title and make up the bulk
-						of the card's content.
-					</p>
-				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">An item</li>
-					<li class="list-group-item">A second item</li>
-				</ul>
-				<div class="card-body">
-					<a href="#" class="card-link">Ver más</a>
-					<a href="#" class="card-link">Comprar</a>
-				</div>
-			</div>
-			<!--CARD-->
-			<div class="card my-5">
+
+			<div class="card">
 				<img src="./assets/img/bebidas.jpg" class="card-img-top" alt="..." />
 				<div class="card-body">
 					<h5 class="card-title">Bebidas</h5>
+					<hr>
 					<p class="card-text">
-						Some quick example text to build on the card title and make up the bulk
-						of the card's content.
+						Quench your thirst with refreshing sips: Icy concoctions, fruity blends, and velvety coffees.
+						Sip and savor the essence
+						of every sip.
 					</p>
 				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">An item</li>
-					<li class="list-group-item">A second item</li>
-				</ul>
-				<div class="card-body">
-					<a href="#" class="card-link">Ver más</a>
-					<a href="#" class="card-link">Comprar</a>
+				<div class="card__footer">
+					<a href="#" class="card__link">Ver más</a>
+					<a href="#" class="card__link">Comprar</a>
 				</div>
 			</div>
-		</div>
-		<!--CARD-DECK-->
-		<!--CARD-DECK-->
-		<div class="card-deck">
-			<!--CARD-->
-			<div class="card my-5">
-				<img src="./assets/img/verduras.jpg" class="card-img-top" alt="..." />
-				<div class="card-body">
-					<h5 class="card-title">Verduras</h5>
-					<p class="card-text">
-						Some quick example text to build on the card title and make up the bulk
-						of the card's content.
-					</p>
-				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">An item</li>
-					<li class="list-group-item">A second item</li>
-				</ul>
-				<div class="card-body">
-					<a href="#" class="card-link">Ver más</a>
-					<a href="#" class="card-link">Comprar</a>
-				</div>
-			</div>
-			<!--CARD-->
-			<div class="card my-5">
+
+			<div class="card">
 				<img src="./assets/img/dulces.jpg" class="card-img-top" alt="..." />
 				<div class="card-body">
 					<h5 class="card-title">Dulces</h5>
+					<hr>
 					<p class="card-text">
-						Some quick example text to build on the card title and make up the bulk
-						of the card's content.
+						Indulge in a sweet morning treat: Warm pastries, sugary delights, and a cup of aromatic coffee.
+						Start your day with a
+						touch of sweetness!.
 					</p>
 				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">An item</li>
-					<li class="list-group-item">A second item</li>
-				</ul>
-				<div class="card-body">
-					<a href="#" class="card-link">Ver más</a>
-					<a href="#" class="card-link">Comprar</a>
+				<div class="card__footer">
+					<a href="#" class="card__link">Ver más</a>
+					<a href="#" class="card__link">Comprar</a>
 				</div>
 			</div>
-			<!--CARD-->
-			<div class="card my-5">
+		</div>
+
+		<div class="card-deck">
+			<div class="card">
 				<img src="./assets/img/empanadas.jpg" class="card-img-top" alt="..." />
 				<div class="card-body">
 					<h5 class="card-title">Empanadas</h5>
+					<hr>
 					<p class="card-text">
-						Some quick example text to build on the card title and make up the bulk
-						of the card's content.
+						Savor the flavors of handcrafted empanadas: Golden crusts, savory fillings, and a burst of
+						delightful spices. Taste
+						tradition in every bite!
 					</p>
 				</div>
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">An item</li>
-					<li class="list-group-item">A second item</li>
-				</ul>
+				<div class="card__footer">
+					<a href="#" class="card__link">Ver más</a>
+					<a href="#" class="card__link">Comprar</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="./assets/img/verduras.jpg" class="card-img-top" alt="..." />
 				<div class="card-body">
-					<a href="#" class="card-link">Ver más</a>
-					<a href="#" class="card-link">Comprar</a>
+					<h5 class="card-title">Verduras</h5>
+					<hr>
+					<p class="card-text">
+						Explore a garden-fresh medley: Crisp greens, vibrant veggies, and zesty dressings. A nutritious
+						and colorful journey on
+						your plate!
+					</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">Ver más</a>
+					<a href="#" class="card__link">Comprar</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<img src="./assets/img/desayunos.jpg" class="card-img-top" alt="..." />
+				<div class="card-body">
+					<h5 class="card-title">Desayunos</h5>
+					<hr>
+					<p class="card-text">
+						Indulge in a breakfast delight: Fluffy pancakes, golden waffles, and a symphony of morning
+						flavors. Rise and shine to a
+						satisfying start!
+					</p>
+				</div>
+				<div class="card__footer">
+					<a href="#" class="card__link">Ver más</a>
+					<a href="#" class="card__link">Comprar</a>
 				</div>
 			</div>
 		</div>
-		<!--CARD-DECK-->
+
+
 	</main>
+
+	<div class="payment-block">
+		<h2 class="payment-block__h2">Ahora aceptamos</h2>
+		<span class="payment-block__ul">
+			<i class="payment-block__icon fab fa-cc-mastercard"></i>
+			<i class="payment-block__icon fab fa-cc-visa"></i>
+			<i class="payment-block__icon fab fa-cc-amex"></i>
+			<i class="payment-block__icon fab fa-cc-diners-club"></i>
+			<i class="payment-block__icon fab fa-cc-paypal"></i>
+			<i class="payment-block__icon fab fa-cc-discover"></i>
+		</span>
+	</div>
+
 	<!--FOOTER-->
-	<footer>
-		<div class="d-flex justify-content-around align-items-center">
-			<h2>Ahora aceptamos</h2>
-			<figure>
-				<i class="mx-2 fab fa-cc-mastercard fa-5x"></i>
-				<i class="mx-2 fab fa-cc-visa fa-5x"></i>
-				<i class="mx-2 fab fa-cc-amex fa-5x"></i>
-				<i class="mx-2 fab fa-cc-diners-club fa-5x"></i>
-				<i class="mx-2 fab fa-cc-paypal fa-5x"></i>
-				<i class="mx-2 fab fa-cc-discover fa-5x"></i>
-			</figure>
-		</div>
-		<div class="d-flex align-items-center">
+	<footer class="footer">
+		<div class="footer__container ">
 			<a href="https://www.linkedin.com/in/zanozano/">
-				<img class="mx-auto" src="./assets/img/logo-footer.png" alt="logo-footer" />
+				<img src="./assets/img/logo-footer.png" alt="logo" />
 			</a>
+			<p>Suricata Food</p>
+			<p>Web design by Cristobal Mazano</p>
 		</div>
 	</footer>
-	<!--FOOTER-->
+
+
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
