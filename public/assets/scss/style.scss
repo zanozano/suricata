@@ -138,7 +138,7 @@ $font-secondary: #bf1563;
 }
 
 // Mobile
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 720px) {
     .payment-block {
         flex-direction: column;
         gap: 1rem;
@@ -151,7 +151,7 @@ $font-secondary: #bf1563;
             justify-content: center;
         }
         &__icon {
-            font-size: 2.3rem;
+            font-size: 1.8rem;
             &:hover {
                 color: rgba($background-icon, 0.8);
                 transform: scale(1.1);
