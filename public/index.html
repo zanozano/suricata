@@ -58,7 +58,7 @@
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="card">
-						<img src="./assets/img/colaciones.jpg" class="card-img-top" alt="..." />
+						<img src="./assets/img/colaciones.jpg" class="card-img-top" alt="colaciones" />
 						<div class="card-body">
 							<h5 class="card-title">Colaciones</h5>
 							<hr>
@@ -70,15 +70,16 @@
 							</p>
 						</div>
 						<div class="card__footer">
-							<a href="#" class="card__link">Ver más</a>
-							<a href="#" class="card__link">Comprar</a>
+							<button href="#" class="btn btn-outline-secondary card__link active-modal"
+								data-toggle="modal" data-target="#my-modal">Ver más</button>
+							<button href="#" class="btn btn-primary card__link">Comprar</button>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="card">
-						<img src="./assets/img/bebidas.jpg" class="card-img-top" alt="..." />
+						<img src="./assets/img/bebidas.jpg" class="card-img-top" alt="bebidas" />
 						<div class="card-body">
 							<h5 class="card-title">Bebidas</h5>
 							<hr>
@@ -90,15 +91,16 @@
 							</p>
 						</div>
 						<div class="card__footer">
-							<a href="#" class="card__link">Ver más</a>
-							<a href="#" class="card__link">Comprar</a>
+							<button href="#" class="btn btn-outline-secondary card__link active-modal"
+								data-toggle="modal" data-target="#my-modal">Ver más</button>
+							<button href="#" class="btn btn-primary card__link">Comprar</button>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="card">
-						<img src="./assets/img/dulces.jpg" class="card-img-top" alt="..." />
+						<img src="./assets/img/dulces.jpg" class="card-img-top" alt="dulces" />
 						<div class="card-body">
 							<h5 class="card-title">Dulces</h5>
 							<hr>
@@ -110,15 +112,16 @@
 							</p>
 						</div>
 						<div class="card__footer">
-							<a href="#" class="card__link">Ver más</a>
-							<a href="#" class="card__link">Comprar</a>
+							<button href="#" class="btn btn-outline-secondary card__link active-modal"
+								data-toggle="modal" data-target="#my-modal">Ver más</button>
+							<button href="#" class="btn btn-primary card__link">Comprar</button>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="card">
-						<img src="./assets/img/empanadas.jpg" class="card-img-top" alt="..." />
+						<img src="./assets/img/empanadas.jpg" class="card-img-top" alt="empanadas" />
 						<div class="card-body">
 							<h5 class="card-title">Empanadas</h5>
 							<hr>
@@ -130,15 +133,16 @@
 							</p>
 						</div>
 						<div class="card__footer">
-							<a href="#" class="card__link">Ver más</a>
-							<a href="#" class="card__link">Comprar</a>
+							<button href="#" class="btn btn-outline-secondary card__link active-modal"
+								data-toggle="modal" data-target="#my-modal">Ver más</button>
+							<button href="#" class="btn btn-primary card__link">Comprar</button>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="card">
-						<img src="./assets/img/verduras.jpg" class="card-img-top" alt="..." />
+						<img src="./assets/img/verduras.jpg" class="card-img-top" alt="verduras" />
 						<div class="card-body">
 							<h5 class="card-title">Verduras</h5>
 							<hr>
@@ -150,15 +154,16 @@
 							</p>
 						</div>
 						<div class="card__footer">
-							<a href="#" class="card__link">Ver más</a>
-							<a href="#" class="card__link">Comprar</a>
+							<button href="#" class="btn btn-outline-secondary card__link active-modal"
+								data-toggle="modal" data-target="#my-modal">Ver más</button>
+							<button href="#" class="btn btn-primary card__link">Comprar</button>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-sm-12 col-md-6 col-lg-4">
 					<div class="card">
-						<img src="./assets/img/desayunos.jpg" class="card-img-top" alt="..." />
+						<img src="./assets/img/desayunos.jpg" class="card-img-top" alt="dasayunos" />
 						<div class="card-body">
 							<h5 class="card-title">Desayunos</h5>
 							<hr>
@@ -170,8 +175,9 @@
 							</p>
 						</div>
 						<div class="card__footer">
-							<a href="#" class="card__link">Ver más</a>
-							<a href="#" class="card__link">Comprar</a>
+							<button href="#" class="btn btn-outline-secondary card__link active-modal"
+								data-toggle="modal" data-target="#my-modal">Ver más</button>
+							<button href="#" class="btn btn-primary card__link">Comprar</button>
 						</div>
 					</div>
 				</div>
@@ -200,10 +206,28 @@
 				<img src="./assets/img/logo-footer.png" alt="logo" />
 			</a>
 			<p>Suricata Food</p>
-			<p>Web design by Cristobal Mazano</p>
+			<p>Design by Cristobal Mazano</p>
 		</div>
 	</footer>
 
+	<!--MODAL-->
+	<div id="my-modal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="moda-title"></h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body" id="modalBody">
+					<img id="modal-img" src="" alt="Imagen de la tarjeta">
+					<p id="modal-description"></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -211,6 +235,22 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
 		crossorigin="anonymous"></script>
+	<!--  -->
+	<script>
+		$(document).ready(function () {
+			$('.active-modal').on('click', function () {
+				var card = $(this).closest('.card');
+				var title = card.find('.card-title').text();
+				var imageSrc = card.find('.card-img-top').attr('src');
+				var description = card.find('.card-text').text();
+
+				var modal = $('#my-modal');
+				modal.find('#moda-title').text(title);
+				modal.find('#modal-img').attr('src', imageSrc);
+				modal.find('#modal-description').text(description);
+			});
+		});
+	</script>
 </body>
 
 </html>
