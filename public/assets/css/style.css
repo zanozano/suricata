@@ -233,7 +233,7 @@ body {
   cursor: pointer;
   margin-bottom: 1.5rem;
   overflow: hidden;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 .card:hover {
@@ -271,6 +271,14 @@ body {
 }
 .card__link:last-child:hover {
   background-color: #bf1563;
+}
+
+.row {
+  transition: all 0.8s ease-in-out;
+}
+
+.row:hover > :not(:hover) {
+  opacity: 0.5;
 }
 
 .payment-block {

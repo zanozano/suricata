@@ -18,24 +18,29 @@ $font-secondary: #bf1563;
     top: 0;
     width: 100%;
     z-index: 10;
+
     & img {
         height: 53px;
         width: 132px;
     }
+
     &__ul {
         display: flex;
         gap: 1rem;
         margin-left: auto;
+
         & a {
             font-size: 1.2rem;
             font-weight: 700;
         }
     }
 }
+
 // Mobile
 @media screen and (max-width: 992px) {
     .navbar {
         gap: 2rem;
+
         & .navbar-toggler {
             border: 2px solid $font-secondary;
         }
@@ -44,6 +49,7 @@ $font-secondary: #bf1563;
 
 .main-container {
     margin: 10rem auto 4rem auto;
+
     &__h1 {
         color: $font-primary;
         font-size: 4rem;
@@ -63,46 +69,63 @@ $font-secondary: #bf1563;
     overflow: hidden;
     transition:
         opacity 0.5s ease-in-out,
-        transform 0.5s ease-in-out;
+        transform 0.3s ease-in-out;
     box-shadow:
         20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
+
     &:hover {
         opacity: 1;
         transform: scale(1.025);
         z-index: 1;
     }
+
     &:not(:hover) {
         opacity: 0.8;
     }
+
     & .card-title {
         font-size: 1.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
     }
+
     & .card-body {
         height: 100%;
     }
+
     &__footer {
         display: flex;
         justify-content: space-between;
         padding: 1rem;
     }
+
     &__link {
         border-radius: 0.4rem;
         font-weight: 500;
         padding: 0.8rem;
         transition: background-color 0.5s ease;
+
         &:last-child {
             background-color: $background-primary;
             border: none;
             color: $background-global;
             text-decoration: none;
+
             &:hover {
                 background-color: $font-secondary;
             }
         }
     }
+}
+
+// sibblings hover
+.row {
+    transition: all .8s ease-in-out;
+}
+
+.row:hover>:not(:hover) {
+    opacity: 0.5;
 }
 
 .payment-block {
@@ -116,20 +139,24 @@ $font-secondary: #bf1563;
     overflow: hidden;
     padding: 1rem 6rem;
     width: 100%;
+
     &__h2 {
         font-size: 2rem;
         font-weight: 700;
         margin-bottom: 0;
     }
+
     &__ul {
         display: flex;
         gap: 1rem;
     }
+
     &__icon {
         color: rgba($background-icon, 1);
         cursor: pointer;
         font-size: 4rem;
         transition: transform 0.3s ease;
+
         &:hover {
             color: rgba($background-icon, 0.8);
             transform: scale(1.1);
@@ -143,15 +170,19 @@ $font-secondary: #bf1563;
         flex-direction: column;
         gap: 1rem;
         padding: 1rem 1rem;
+
         &__h2 {
             font-size: 1.5rem;
             text-align: center;
         }
+
         &__ul {
             justify-content: center;
         }
+
         &__icon {
             font-size: 1.8rem;
+
             &:hover {
                 color: rgba($background-icon, 0.8);
                 transform: scale(1.1);
@@ -166,29 +197,35 @@ $font-secondary: #bf1563;
     display: flex;
     justify-content: center;
     padding: 2rem 0;
+
     &__container {
         align-items: center;
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
+
     a {
         align-items: center;
         cursor: pointer;
         display: flex;
     }
+
     img {
         height: 6rem;
         width: max-content;
+
         &:hover {
             opacity: 0.8;
             scale: 1.1;
         }
     }
+
     p {
         font-size: 1.5rem;
         font-weight: 700;
         margin: 0;
+
         &:last-child {
             font-size: 1rem;
             font-weight: 400;
@@ -198,10 +235,12 @@ $font-secondary: #bf1563;
 
 .modal {
     color: $font-primary;
+
     & h4 {
         font-size: 1.5rem;
         font-weight: 700;
     }
+
     & p {
         margin-top: 1.5rem;
         overflow-wrap: break-word;
