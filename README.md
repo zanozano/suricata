@@ -6,9 +6,9 @@
 
 ## Description
 
-This is a dynamic landing page project designed for the marketing of food products. Utilizing the Bootstrap framework as its foundation, the project combines the power of SCSS and follows the BEM (Block, Element, Modifier) methodology to create a modular and maintainable codebase.
+Welcome to the Suricata Landing Page, a dynamic project designed to market food products. We've harnessed the power of Bootstrap as the project's foundation, complemented by the versatility of SCSS and adhering to the BEM (Block, Element, Modifier) methodology. This approach ensures a modular and maintainable codebase.
 
-With a strong emphasis on user interaction, the user interface (UI) has been meticulously crafted. Hover effects and CSS pseudo-classes have been strategically implemented to enhance user engagement and create an immersive browsing experience. Explore our delicious offerings and seamlessly navigate through our visually appealing and user-friendly design.
+Our focus extends beyond aesthetics; we've meticulously crafted the user interface (UI) to engage users effectively. Hover effects and strategic CSS pseudo-classes create an immersive browsing experience. Dive into our delectable offerings and experience seamless navigation through our visually appealing and user-friendly design.
 
 ## Author
 
@@ -17,11 +17,13 @@ With a strong emphasis on user interaction, the user interface (UI) has been met
 ## Table of Contents
 
 1. [Usage Instructions](#usage-instructions)
-2. [Contributing](#contributing)
+2. [Scripts](#scripts)
+3. [Current Deployment Example](#current-deployment-example)
+4. [Contributing](#contributing)
 
 ## Usage Instructions
 
-Here, provide information on how users can get and use your project. For example, how they can clone the repository, install dependencies, compile the code, or run the application.
+Let's get you started with Suricata Landing Page. Here's how you can clone the repository, install dependencies, and run the application:
 
 ### Prerequisites
 
@@ -31,7 +33,7 @@ Make sure you have the following tools installed on your system:
 
 ### Clone the Repository
 
-You can clone this repository using Git. Open your terminal and run the following command:
+Clone this repository using Git. Open your terminal and run the following command:
 
 ```bash
 git clone https://github.com/yourusername/suricata-landing-page.git
@@ -48,15 +50,31 @@ npm install
 
 ### Start the Application
 
-To run the application, you can use the provided start script:
+To run the application, use the provided start script:
 
 ```bash
 npm start
 ```
 
+## Scripts
+
+For real-time updates of SCSS to CSS, use the following script after installing the dependencies:
+
+```json
+"scripts": {
+    "scss": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css"
+}
+```
+
+## Current Deployment Example
+
+See Suricata Landing Page in action by visiting the following Firebase-hosted link:
+
+[Suricata Landing Page](https://suricata-9cc9b.web.app/)
+
 ## Contributing
 
-If you'd like others to contribute to your project, provide instructions on how they can do so. This may include details on how to report issues, request features, or submit pull requests.
+We welcome contributions to the Suricata Landing Page project. To get involved, follow our guidelines for reporting issues, requesting features, or submitting pull requests in the repository.
 
 ---
 
